@@ -37,7 +37,7 @@
 - You can run your app on the iOS simulator by selecting any of the available simulators in the destination menu.
 - To run your app on your iOS device, you can select `iOS device` from the destination drop down menu. This requires a valid Apple developer account. 
 
-**Note-** the iOS Device option can become automatically become selected when an iOS device is plugged into your computer.
+**Note-** the iOS Device option can automatically become selected when an iOS device is plugged into your computer.
 
 ##Debug Your App
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_overview.png" width=100%>
