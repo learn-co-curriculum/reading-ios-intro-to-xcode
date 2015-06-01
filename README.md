@@ -1,63 +1,160 @@
-#Intro to Xcode
+# Introduction to Xcode
 ------
 
-##Xcode Anatomy
+## Objectives
+1. Understand the concept of an Integrated Development Environment.
+2. Get oriented with the basic layout of Xcode.
+3. Become familiar enough with Xcode to accomplish the first lab, *Your-First-NSLog*.
+
+## What is Xcode?
+
+Xcode is the **Integrated Development Environment** (**IDE**) provided by Apple to third-party programmers such as yourself for developing iOS and OS X applications written in Objective-C and Swift. An IDE is a program (or program suite) that incorporates tools for the various aspects of creating software. Xcode, specifically, brings together the code editor, compiler, debugger, interface builder, application bundler, and simulator (which is technically a separate program launched from within Xcode).
+
+**Note:** *The first time you open Xcode, your machine will ask you if you want enable "Developer Mode". Go ahead and do this; don't be scared of it! What it does is allow you to debug your projects without OS X asking for your administrator password every time. If you previously selected "No" the first time you opened Xcode, don't worry! Just open your terminal and type* `$ DevToolsSecurity -enable`.
+
+Let's unpack some of the terminology in that last sentence:
+
+1. **Code Editor** - a text editor with plug-ins for handling code as text. Stand-alone code editors include Sublime Text and Code Runner.
+2. **Compiler** - this is a function that translates the programmer's code written in a high-level language such as Objective-C or Swift into Machine Language—a binary file that the processor can understand. When you hit "Run" on your current scheme, your code is first translated down to Assembler Language, and then down to Machine Language which can be handed to your computer's processor to execute. Xcode also contains a **Pre-Compiler** which scans your code *as you type it* for syntacical errors and other problems to reduce the likelihood that your build contains code that will cause a crash.
+3. **Debugger** - all code has errors. "Good Practice" guidelines and pre-compilers help reduce the likelihood of errors being written, but they happen. Good debugging tools allow the programmer to scan the code as processes are running, watching the application's elements act upon and change themselves to see where they collide.
+4. **Interface Builder** - specifically in Xcode this is the name of the suite that allows the use of Storyboards to create the visual layout of an user interface (UI) in a similar fashion to design and layout software.
+5. **Application Bundler** - this assembles the program as an application package to be shipped to the consumer for deployment. You won't be using this for any of the labs, but you should know that Xcode contains the functionality to submit your application to the App Store for review. You might eventually do this on your own with side projects.
+6. **Simulator** - Xcode contains a shell program for partially replicating the conditions of running your application on a mobile device. It's very useful for development to see how your code might behave once it's deployed, but for a variety of reasons it can't ever be quite the real thing so it can't replace testing your build on an actual mobile device.
+
+
+
+## Xcode Anatomy 101
+
+**Note:** *If this is your first time using Xcode and would like a sample project to explore, go ahead and fork, clone, and open the lab in next the lesson titled* Your-First-NSLog.
+
+In addition to the typically-placed application Toolbar, Xcode has four main workspace windows. These are, in clockwise rotation from the left:
+
+1. The Navigator area,
+2. The Editor area,
+3. The Utilities area, and
+4. The Debug area.
+
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_overview.png" width=100%>
 
-##The Navigator Area
-<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_navigator.png" >
 
-||navigator menu item| description|
-|-----------|:--------------------|:----------:|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png" >| Project navigator |Add, delete, group, and otherwise manage files in your project, or choose a file to view or edit its contents in the editor area.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_symbol_navigator_table.png" >| Symbol navigator |Browse the symbols in your project as a list or hierarchy. Buttons on the left of the filter bar let you limit the shown symbols to a combination of only classes and protocols, only symbols in your project, or only containers.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_find_navigator_table.png" >| Find navigator|Use search options and filters to quickly find any string within your project.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_issue_navigator_table.png" >| Issue navigator|View issues such as diagnostics, warnings, and errors found when opening, analyzing, and building your project.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_test_navigator_table.png" >| Test navigator|Create, manage, run, and review unit tests.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_navigator_table.png" >| Debug navigator|Examine the running threads and associated stack information at a specified point or time during program execution.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_breakpoint_navigator_table.png" >| Breakpoint navigator|Fine-tune breakpoints by specifying characteristics such as triggering conditions.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_report_navigator_table.png" >| Report navigator| View the history of your build, run, debug, continuous integration, and source control tasks.|
-
-##Workspace Toolbar
+## 0. Workspace Toolbar
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_toolbar.png" width=100%>
 
-||workspace configuration button|description|
-|--------|--------|:-------------:|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png" >| Show and hide the **navigator area**| Use this area for navigating all facets of your project, including files, symbols, breakpoints, build issues, tests, breakpoints, and build reports. You can also search for any string in your project.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_middle.png" >| Show and hide the **debug area**| Use this area for viewing variables, interacting with the debugger console, and controlling the execution of your application.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png" >| Show and hide the **utilities area**| Use this area to inspect or modify attributes of files, graphical user interface elements, sprites, and other elements in your project. Also use it to access a library of ready-made resources.|
+The Toolbar is a small collection of project-wide buttons and labels. They are:
 
-##Run Your App
-<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_run_menu_overview.png" width=100%>
+1. Close/Minimize/Maximize Window buttons (these are the red, yellow, and green dots standard to all OS X windows),
+2. The ▶︎ "**Run**" button (`⌘R`) which builds and then runs the current scheme,
+3. The ◼︎ "**Stop**" button which stops the running scheme or application,
+4. The "**Scheme Menu**",
+	* The left half selects the current target,
+	* The right half selects the destination—the device or simulator you wish to run on, (**Note:** *If you connect an iOS device to your computer, Xcode will typically assume you want to run the build on that device and automatically select it as your destination. If you encounter an authorization error, this may be the cause of it. Selecting the simulator instead will not trigger the authorization check.*
+
+5. The "**Activity viewer**" displays information relevant to the current operation, as well as symbols for the number of warning and errors generated by the compiler,
+6. The **Editor configuration buttons**,
+	* "**Standard Editor**" - shows the primary code editor window
+	* "**Assistant Editor**" - shows a secondary code editor window alongside the primary window (this gets crowded without a larger screen),
+	* "**Version Editor**" - shows the Xcode's built-in version control UI, since we utilize git and GitHub for version control, you will not use for the labs,
+	
+7. The **Workspace configuration buttons** which show or hide their respective areas:
+</ol>
+
+|Icon|Workspace Configuration Button|Description|
+|:--------:|--------|:-------------|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png" >| Show or hide the **Navigator area**| Use this area for navigating all facets of your project, including files, symbols, breakpoints, build issues, tests, breakpoints, and build reports. You can also search for any string in your project.|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_middle.png" >| Show or hide the **Debug area**| Use this area for viewing variables, interacting with the debugger console, and controlling the execution of your application.|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png" >| Show or hide the **Utilities area**| Use this area to inspect or modify attributes of files, graphical user interface elements, sprites, and other elements in your project. Also use it to access a library of ready-made resources.|
 
 ###Choosing a Destination
+
+The **Scheme Menu** allows you to select your target and destination with drop-down menus:
+
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_run_destination.png" width=100%>
 
-- Command-R is the shortcut to run the app.
-- You can run your app on the iOS simulator by selecting any of the available simulators in the destination menu.
-- To run your app on your iOS device, you can select `iOS device` from the destination drop down menu. This requires a valid Apple developer account. 
 
-**Note-** the iOS Device option can automatically become selected when an iOS device is plugged into your computer.
+## 1. The Navigator Area
 
-##Debug Your App
+The appropriately-named **Navigator area** is actually a stack of eight different navigators which help you get around your project based on different elements. You'll likely spend the most time with the Project Navigator which is the default drop-down file list.
+
+<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_navigator.png" >
+
+**Top Tip:** *An easy well to tell if you are in either an `*.xcodeproj` file or an `*.xcworkspace` file is by looking for multiple "blueprint" icons in the Project Navigator. If you see only one then you are currently inside a `*.xcodeproj` file and running a scheme that incorporates outside frameworks like CocoaPods such as Specta & Expecta will fail to build. If you are using CocoaPods and don't see a second "blueprint" icon labeled "Pods", then you need to close your project and open the `*.xcworkspace` file instead.*
+
+The folder icons indicate a "group". They are named "groups" instead of "folders" because this is a file structure internal to Xcode and separate from the operating system's file structure which uses directories, a.k.a. folders. You can create a group by going to the Status bar and selecting File —> New —> Group OR Group From Selection. Adding a file to a group does NOT move it around in your directory. You will not be making your own groups until later labs, but get used to calling them groups.
+
+|Icon|Navigator Pane|Description|
+|-----------|:--------------------:|:----------|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png" >| Project |Add, delete, group, and otherwise manage files in your project, or choose a file to view or edit its contents in the editor area.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_symbol_navigator_table.png" >| Symbol |Browse the symbols in your project as a list or hierarchy. Buttons on the left of the filter bar let you limit the shown symbols to a combination of only classes and protocols, only symbols in your project, or only containers.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_find_navigator_table.png" >| Find |Use search options and filters to quickly find any string within your project.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_issue_navigator_table.png" >| Issue |View issues such as diagnostics, warnings, and errors found when opening, analyzing, and building your project.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_test_navigator_table.png" >| Test |Create, manage, run, and review unit tests.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_navigator_table.png" >| Debug |Examine the running threads and associated stack information at a specified point or time during program execution.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_breakpoint_navigator_table.png" >| Breakpoint |Fine-tune breakpoints by specifying characteristics such as triggering conditions.|
+|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_report_navigator_table.png" >| Report | View the history of your build, run, debug, continuous integration, and source control tasks.|
+
+### The Test Navigator
+
+After running a build utilizing your unit tests (`⌘U`), the Test navigator will populate itself with your test results. A green light means the test passed, a red light means it failed! Selecting a test by name in this navigator will load that test's file in the Code Editor at the relevant line for the selected test.
+
+<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_test_overview.png" width="100%">
+
+### The Debug Navigator
+
+This navigator comes out at build time and shows how much processing power the application is using ("**CPU**"), how much memory it is holding on to ("**Memory**"), and the number of and contents of each process thread running within the simulator or device. For now, everything you're writing will be run on the main thread ("**Thread 1**"). We'll go into the basics of multi-threading once we get to User Interfaces and internet requests, so don't worry about wrapping your head around the concept yet.
+
+<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_breakpoint_gutter.png" width=100%>
+**Above:** *A breakpoint exception.*
+
+## 2. The Code Editor
+
+This is the window which contains Xcode's text editor for writing code. The font coloring is automatic based upon the set preferences and the syntax of the currently relevant programming language. You can customize these coloring conventions, font, and size of your text as well as the background color of this area in Xcode's preferences under the "**Fonts & Colors**" tab. 
+
+**Top Tip:** *You can also create a presentation preset for easily switching to larger display fonts without affecting your personal font customizations.*
+
+### The Gutter
+
+The left-most column in the Code Editor which contains the line numbers is known as the **Gutter**. Blue arrow-tabs present in the gutter are "**breakpoint indicators**". Breakpoints are a signal to the application to pause the processes for inspection. This allows you to freeze a moment in time of your application so you can look at exactly what's happening. This helps immensely with the debugging process.
+ 
+The vertical line between the line numbers and your code allows you to fold or unfold your code. **Code folding** is an action that collapses a block or segment of code in the editor to make it easier to read. This feature won't be relevant to you until you get to the more advanced labs, but you should be aware of it in case you invoke it accidentally. Double-clicking on this folding bar will cause the selected block of code to collapse into a pair of curly braces containing an ellipsis `{ ... }`. Don't panic when you do this accidentally! Just click on the ellipsis and your code will expand back out.
+
+## 3. The Utilities Area
+
+The Utilies Area really shines in Interface Builder which we're not introducing to you just yet. In the Code Editor, however, it displays only either the File Inspector or the Quick Help guide.
+
+* The **File Inspector** displays a set of information relevant to the current file such as directory path and target.
+* The **Quick Help** guide is immensely helpful. It provides a summary description of the cursor-selected class and several relevant hot links, specifically the link to Apple's Reference Guide on that class. This is often quicker than a google search and works offline, being stored locally as part of Xcode. You can access this database directly in Xcode's status bar by selecting Help —> Documentation and API Reference.
+
+## 4. The Debug Area
+
+The debugger is usually tucked away while writing code, yet comes out to play almost every time the build is run. An automatic breakpoint will get triggered if your build succeeds but your program crashes. The information printed out can be a valuable source of insight toward finding the problem. In time, you'll learn how to interpret much of the information that gets dumped out by a crash!
+
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_overview.png" width=100%>
 
-###Breakpoint Gutter
-<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_breakpoint_gutter.png" width=100%>
 
-###Debug Area- Control Execution and View State Information
+Don't fret, though. Understanding the debugger is a skill in itself. It's OK to feel intimidated by all the computery information it throws out! Right now we're just going to explain the different interface elements. Let's a closer look.
+
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_area_detail.png" width=100%>
 
-||program execution control symbol|description|
-|---------|-------------|:--------------:|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_pause.png" >| Pause| Pause button suspends execution of the app.|
+The left window is the **Variable Viewer** which shows a drop-down list of all of your program's objects and instance variables held in memory at the current scope. We'll teach you how to review the information in this window.
+
+The right window is the **Console Output Viewer**. This is where your `NSLog`s will print out, and where your crash details will print out when an exception breakpoint is thrown. You can also enter the `po <#objectName#>` command into this window to get a ***p***rint***o***ut of that object's description property, or you can also print out the result of a method with `po [<#objectName#> <#methodCall#>]`.
+
+**// Flat-fact:** *If you've noticed the* `(lldb)` *ticker that trails the printouts in the Console Output Viewer, good eyes! [LLDB](http://lldb.llvm.org/) is the name of debugging program that's integrated into Xcode. It's part of the LLVM package and inherits from GDB which was developed by Richard Stallman in 1986.*
+
+|Icon|Program Execution Control Symbol|Description|
+|:---------:|-------------|:--------------|
+|.|Hide/show Debug area| Allows you to hide the Debug area without reaching all the way across the screen to the Toolbar. |
+|.|Turn Breakpoints On/Off| If this icon is highlighted blue, your manual breakpoints will pause the build at run time. If the icon is empty, your manual breakpoints are turned off. This is a useful toggle if you have numerous breakpoints set so you can avoid de-activating them individually.|
 |<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_play.png" >| Play| Play button continues execution of the app.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_step_over.png" >| Step Over| Step over will execute the current line of code, including any methods.|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_pause.png" >| Pause| Pause button suspends execution of the app.|
 |<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_step_over.png" >| Step Over| Step over will execute the current line of code, including any methods.|
 |<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_step_into.png" >| Step Into| If the current line of code calls a method, step into starts execution at the current line, and then stops when it reaches the first line of the a called method.|
 |<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_step_out.png" >| Step Out| Step out executes the rest of the current method or function.|
+|.|Debug View Hierarchy| This loads a special viewer for observing the stack of view layers in a user interface. |
+|.|Simulate a location| The tells the iOS simulator to feed to the application a set of pre-recorded GPS information for testing location services.|
 
-##Test Your App
-<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_test_overview.png" width="100%">
+We'll teach your more about how to use the debugger effectively in the coming weeks.
 
-- Command-U is the shortcut to test the app.
+## Practicum: *Your-First-NSLog*
+
+The next lesson titled *Your-First-NSLog* contains your first hands-on Xcode project. Even though the task it expects is rather simple, acquinating yourself with Xcode is a task in itself. While it isn't perfect, Xcode is one of the most fully functional IDEs in the developer ecosystem, combining a vast variety of tools with their owns depths of function. The layout of options, constantly changing with every update, can easily feel overwhelming to a new programmer. Get yourself acquainted with the current version of Xcode so you can more efficiently navigate your own tools!
