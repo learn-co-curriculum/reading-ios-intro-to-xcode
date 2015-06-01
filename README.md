@@ -9,7 +9,7 @@
 
 ||navigator menu item| description|
 |-----------|:--------------------|:----------:|
-|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png" >| Project navigator |Add, delete, group, and otherwise manage files in your project, or choose a file to view or edit its contents in the editor area.|
+|![](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png)| Project navigator |Add, delete, group, and otherwise manage files in your project, or choose a file to view or edit its contents in the editor area.|
 |<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_symbol_navigator_table.png" >| Symbol navigator |Browse the symbols in your project as a list or hierarchy. Buttons on the left of the filter bar let you limit the shown symbols to a combination of only classes and protocols, only symbols in your project, or only containers.|
 |<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_find_navigator_table.png" >| Find navigator|Use search options and filters to quickly find any string within your project.|
 |<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_issue_navigator_table.png" >| Issue navigator|View issues such as diagnostics, warnings, and errors found when opening, analyzing, and building your project.|
@@ -21,9 +21,9 @@
 ##Workspace Toolbar
 <img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_toolbar.png" width=100%>
 
-||workspace configuration button|description|
+|icon|workspace configuration button|description|
 |--------|--------|:-------------:|
-|<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png" >| Show and hide the **navigator area**| Use this area for navigating all facets of your project, including files, symbols, breakpoints, build issues, tests, breakpoints, and build reports. You can also search for any string in your project.|
+|![](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png) | Show and hide the **navigator area**| Use this area for navigating all facets of your project, including files, symbols, breakpoints, build issues, tests, breakpoints, and build reports. You can also search for any string in your project.|
 |<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_middle.png" >| Show and hide the **debug area**| Use this area for viewing variables, interacting with the debugger console, and controlling the execution of your application.|
 |<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png" >| Show and hide the **utilities area**| Use this area to inspect or modify attributes of files, graphical user interface elements, sprites, and other elements in your project. Also use it to access a library of ready-made resources.|
 
