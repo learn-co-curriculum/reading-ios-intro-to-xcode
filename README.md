@@ -7,7 +7,7 @@
 ##The Navigator Area
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_navigator.png" >
 
-||navigator menu item| description|
+|icon|navigator menu item| description|
 |-----------|:--------------------|:----------:|
 |![](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png)| Project navigator |Add, delete, group, and otherwise manage files in your project, or choose a file to view or edit its contents in the editor area.|
 |<img src="http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_symbol_navigator_table.png" >| Symbol navigator |Browse the symbols in your project as a list or hierarchy. Buttons on the left of the filter bar let you limit the shown symbols to a combination of only classes and protocols, only symbols in your project, or only containers.|
@@ -48,7 +48,7 @@
 ###Debug Area- Control Execution and View State Information
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_area_detail.png" width=100%>
 
-||program execution control symbol|description|
+|icon|program execution control symbol|description|
 |---------|-------------|:--------------:|
 |<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_pause.png" >| Pause| Pause button suspends execution of the app.|
 |<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_play.png" >| Play| Play button continues execution of the app.|
