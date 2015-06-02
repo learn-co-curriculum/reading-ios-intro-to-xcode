@@ -58,11 +58,11 @@ The Toolbar is a small collection of project-wide buttons and labels. They are:
 7. The **Workspace configuration buttons** which show or hide their respective areas:
 </ol>
 
-|Icon|Workspace Configuration Button|Description|
-|:--------:|--------|:-------------|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png" >| Show or hide the **Navigator area**| Use this area for navigating all facets of your project, including files, symbols, breakpoints, build issues, tests, breakpoints, and build reports. You can also search for any string in your project.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_middle.png" >| Show or hide the **Debug area**| Use this area for viewing variables, interacting with the debugger console, and controlling the execution of your application.|
-|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png" >| Show or hide the **Utilities area**| Use this area to inspect or modify attributes of files, graphical user interface elements, sprites, and other elements in your project. Also use it to access a library of ready-made resources.|
+|Icon|Workspace Configuration Button|
+|:--------:|--------|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png" >| Show or hide the **Navigator area**.|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_middle.png" >| Show or hide the **Debug area**.|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png" >| Show or hide the **Utilities area**.|
 
 ###Choosing a Destination
 
@@ -77,7 +77,7 @@ The appropriately-named **Navigator area** is actually a stack of eight differen
 
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_navigator.png" >
 
-**Top Tip:** *An easy well to tell if you are in either an `*.xcodeproj` file or an `*.xcworkspace` file is by looking for multiple "blueprint" icons in the Project Navigator. If you see only one then you are currently inside a `*.xcodeproj` file and running a scheme that incorporates outside frameworks like CocoaPods such as Specta & Expecta will fail to build. If you are using CocoaPods and don't see a second "blueprint" icon labeled "Pods", then you need to close your project and open the `*.xcworkspace` file instead.*
+**Top Tip:** *An easy well to tell if you are in either an* `*.xcodeproj` *file or an* `*.xcworkspace` *file is by looking for multiple "blueprint" icons in the Project Navigator. If you see only one then you are currently inside a* `*.xcodeproj` *file and running a scheme that incorporates outside frameworks like CocoaPods such as Specta & Expecta will fail to build. If you are using CocoaPods and don't see a second "blueprint" icon labeled "Pods", then you need to close your project and open the* `*.xcworkspace` *file instead.*
 
 The folder icons indicate a "group". They are named "groups" instead of "folders" because this is a file structure internal to Xcode and separate from the operating system's file structure which uses directories, a.k.a. folders. You can create a group by going to the Status bar and selecting File —> New —> Group OR Group From Selection. Adding a file to a group does NOT move it around in your directory. You will not be making your own groups until later labs, but get used to calling them groups.
 
@@ -153,7 +153,12 @@ The right window is the **Console Output Viewer**. This is where your `NSLog`s w
 |.|Debug View Hierarchy| This loads a special viewer for observing the stack of view layers in a user interface. |
 |.|Simulate a location| The tells the iOS simulator to feed to the application a set of pre-recorded GPS information for testing location services.|
 
-We'll teach your more about how to use the debugger effectively in the coming weeks.
+We'll teach your more about how to use the debugger effectively in the coming weeks. For now, just understand the layout of the tools well enough to locate the Console Output viewer. If you can only see the Variable (or vice-versa), the Console Output Viewer is likely hidden. There's a pair of show/hide buttons in the bottom right corner of the Debug area which governs these two viewers.
+
+|Icon|Debugger Configuration Button|
+|:--------:|--------|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png" >| Show or hide the **Variable Viewer**.|
+|<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png" >| Show or hide the **Console Output Viewer**.|
 
 ## Practicum: *Your-First-NSLog*
 
