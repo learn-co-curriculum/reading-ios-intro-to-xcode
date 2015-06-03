@@ -14,12 +14,12 @@ Xcode is the **Integrated Development Environment** (**IDE**) provided by Apple 
 
 Let's unpack some of the terminology in that last sentence:
 
-1. **Code Editor** - a text editor with plug-ins for handling code as text. Stand-alone code editors include Sublime Text and Code Runner.
-2. **Compiler** - this is a function that translates the programmer's code written in a high-level language such as Objective-C or Swift into Machine Language—a binary file that the processor can understand. When you hit "Run" on your current scheme, your code is first translated down to Assembler Language, and then down to Machine Language which can be handed to your computer's processor to execute. Xcode also contains a **Pre-Compiler** which scans your code *as you type it* for syntacical errors and other problems to reduce the likelihood that your build contains code that will cause a crash.
+1. **Code Editor** - a text editor with specialized in handling code as text. Sublime Text is a prime example of a standalone code editor.
+2. **Compiler** - this is a program that translates your code from Objective-C or Swift into machine language, the native language of the processor. When you hit "Run", your code is first compiled so it can then be handed to your computer's processor to execute. Xcode also contains a **Pre-Compiler** which scans your code *as you type it* for syntacical errors and other problems to reduce the likelihood that your build contains code that will cause a crash.
 3. **Debugger** - all code has errors. "Good Practice" guidelines and pre-compilers help reduce the likelihood of errors being written, but they happen. Good debugging tools allow the programmer to scan the code as processes are running, watching the application's elements act upon and change themselves to see where they collide.
 4. **Interface Builder** - specifically in Xcode this is the name of the suite that allows the use of Storyboards to create the visual layout of an user interface (UI) in a similar fashion to design and layout software.
 5. **Application Bundler** - this assembles the program as an application package to be shipped to the consumer for deployment. You won't be using this for any of the labs, but you should know that Xcode contains the functionality to submit your application to the App Store for review. You might eventually do this on your own with side projects.
-6. **Simulator** - Xcode contains a shell program for partially replicating the conditions of running your application on a mobile device. It's very useful for development to see how your code might behave once it's deployed, but for a variety of reasons it can't ever be quite the real thing so it can't replace testing your build on an actual mobile device.
+6. **Simulator** - Xcode contains a program for partially replicating the conditions of running your application on a mobile device. It's very useful for development to see how your code might behave once it's deployed, but for a variety of reasons it can't ever be quite the real thing so it can't replace testing your build on an actual mobile device.
 
 
 
@@ -43,8 +43,8 @@ In addition to the typically-placed application Toolbar, Xcode has four main wor
 The Toolbar is a small collection of project-wide buttons and labels. They are:
 
 1. Close/Minimize/Maximize Window buttons (these are the red, yellow, and green dots standard to all OS X windows),
-2. The ▶︎ "**Run**" button (`⌘R`) which builds and then runs the current scheme,
-3. The ◼︎ "**Stop**" button which stops the running scheme or application,
+2. The ▶︎ "**Run**" button (`⌘`+`R`) which builds and then runs the current scheme,
+3. The ◼︎ "**Stop**" button (`⌘`+`.`) which stops the running scheme or application,
 4. The "**Scheme Menu**",
 	* The left half selects the current target,
 	* The right half selects the destination—the device or simulator you wish to run on, (**Note:** *If you connect an iOS device to your computer, Xcode will typically assume you want to run the build on that device and automatically select it as your destination. If you encounter an authorization error, this may be the cause of it. Selecting the simulator instead will not trigger the authorization check.*
@@ -98,22 +98,20 @@ After running a build utilizing your unit tests (`⌘U`), the Test navigator wil
 
 <img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_test_overview.png" width="100%">
 
-### The Debug Navigator
-
-This navigator comes out at build time and shows how much processing power the application is using ("**CPU**"), how much memory it is holding on to ("**Memory**"), and the number of and contents of each process thread running within the simulator or device. For now, everything you're writing will be run on the main thread ("**Thread 1**"). We'll go into the basics of multi-threading once we get to User Interfaces and internet requests, so don't worry about wrapping your head around the concept yet.
-
-<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_breakpoint_gutter.png" width=100%>
-**Above:** *A breakpoint exception.*
+**Note:** *The testing frameworks within Xcode periodically become unstable. If your tests fail when you're reasonably confident that they should be passing, before tearing your code apart try the first step of closing Xcode completely and restarting the application.*
 
 ## 2. The Code Editor
 
-This is the window which contains Xcode's text editor for writing code. The font coloring is automatic based upon the set preferences and the syntax of the currently relevant programming language. You can customize these coloring conventions, font, and size of your text as well as the background color of this area in Xcode's preferences under the "**Fonts & Colors**" tab. 
+This is the window which contains Xcode's text editor for writing code. The font coloring is based upon the syntax of the currently relevant programming language. You can customize these colors and the font type & size of your text in Xcode's preferences under the "**Fonts & Colors**" tab. 
 
 **Top Tip:** *You can also create a presentation preset for easily switching to larger display fonts without affecting your personal font customizations.*
 
 ### The Gutter
 
 The left-most column in the Code Editor which contains the line numbers is known as the **Gutter**. Blue arrow-tabs present in the gutter are "**breakpoint indicators**". Breakpoints are a signal to the application to pause the processes for inspection. This allows you to freeze a moment in time of your application so you can look at exactly what's happening. This helps immensely with the debugging process.
+
+<img src="https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_debug_breakpoint_gutter.png" width=100%>
+**Above:** *Xcode when encountering a breakpoint.*
  
 The vertical line between the line numbers and your code allows you to fold or unfold your code. **Code folding** is an action that collapses a block or segment of code in the editor to make it easier to read. This feature won't be relevant to you until you get to the more advanced labs, but you should be aware of it in case you invoke it accidentally. Double-clicking on this folding bar will cause the selected block of code to collapse into a pair of curly braces containing an ellipsis `{ ... }`. Don't panic when you do this accidentally! Just click on the ellipsis and your code will expand back out.
 
@@ -162,4 +160,4 @@ We'll teach your more about how to use the debugger effectively in the coming we
 
 ## Practicum: *Your-First-NSLog*
 
-The next lesson titled *Your-First-NSLog* contains your first hands-on Xcode project. Even though the task it expects is rather simple, acquinating yourself with Xcode is a task in itself. While it isn't perfect, Xcode is one of the most fully functional IDEs in the developer ecosystem, combining a vast variety of tools with their owns depths of function. The layout of options, constantly changing with every update, can easily feel overwhelming to a new programmer. Get yourself acquainted with the current version of Xcode so you can more efficiently navigate your own tools!
+The next lesson titled *Your-First-NSLog* contains your first hands-on Xcode project. Even though the task it expects is rather simple, acquainting yourself with Xcode is a task in itself. While it isn't perfect, Xcode is one of the most fully functional IDEs in the developer ecosystem, combining a vast variety of tools with their owns depths of function. The layout of options, constantly changing with every update, can easily feel overwhelming to a new programmer. Get yourself acquainted with the current version of Xcode so you can more efficiently navigate your own tools!
