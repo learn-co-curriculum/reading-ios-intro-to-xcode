@@ -16,7 +16,7 @@ Let's unpack some of the terminology in that last sentence:
 1. **Code Editor** - a text editor with specialized in handling code as text. Sublime Text is a prime example of a standalone code editor.
 2. **Compiler** - this is a program that translates your code from Objective-C or Swift into machine language, the native language of the processor. When you hit "Run", your code is first compiled so it can then be handed to your computer's processor to execute. Xcode also contains a **Pre-Compiler** which scans your code *as you type it* for syntactical errors and other problems to reduce the likelihood that your build contains code that will cause a crash.
 3. **Debugger** - all code has errors. "Good Practice" guidelines and pre-compilers help reduce the likelihood of errors being written, but they happen. Good debugging tools allow the programmer to scan the code as processes are running, watching the application's elements act upon and change themselves to see where they collide.
-4. **Interface Builder** - specifically in Xcode this is the name of the suite that allows the use of Storyboards to create the visual layout of an user interface (UI) in a similar fashion to design and layout software.
+4. **Interface Builder** - specifically in Xcode this is the name of the suite that allows the use of Storyboards to create the visual layout of a user interface (UI) in a similar fashion to design and layout software.
 5. **Application Bundler** - this assembles the program as an application package to be shipped to the consumer for deployment. You won't be using this for any of the labs, but you should know that Xcode contains the functionality to submit your application to the App Store for review. You might eventually do this on your own with side projects.
 6. **Simulator** - Xcode contains a program for partially replicating the conditions of running your application on a mobile device. It's very useful for development to see how your code might behave once it's deployed, but for a variety of reasons it can't ever be quite the real thing so it can't replace testing your build on an actual mobile device.
 
@@ -24,7 +24,7 @@ Let's unpack some of the terminology in that last sentence:
 
 ## Xcode Anatomy 101
 
-**Note:** *If this is your first time using Xcode and would like a sample project to explore, go ahead and fork, clone, and open the lab in next the lesson titled* Your-First-NSLog.
+**Note:** *If this is your first time using Xcode and would like a sample project to explore, go ahead and fork, clone, and open the lab in the next lesson titled* Your-First-NSLog.
 
 In addition to the typically-placed application Toolbar, Xcode has four main workspace windows. These are, in clockwise rotation from the left:
 
