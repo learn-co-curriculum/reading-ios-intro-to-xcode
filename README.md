@@ -12,6 +12,8 @@ Xcode is the **Integrated Development Environment** (**IDE**) provided by Apple 
 
 To most beginners, Xcode feels very overwhelming. It's totally natural if you share this experience. Xcode provides a deluge of functionality that's continually being expanded and improved. Learning to use the multitude of tools available through Xcode is an entire set of skills in itself. Acclimating to the Xcode environment is a significant portion of this course which aims to give you, the student, a hands-on working knowledge of using Xcode first-hand to develop mobile applications for iOS.
 
+![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_is_overwhelming.jpg)
+
 It's our belief that programming Objective-C in Xcode is most effectively learned through practice. The lessons that you'll be going through will generally alternate between readings and labs. Labs are actual Xcode projects that we've set up for you so that you can get right to composing code. As the course progresses, you'll learn more and more about Xcode and eventual become capable of completing a project that you started from scratch.
 
 **Note:** *The first time you open Xcode, your machine will ask you if you want to enable "Developer Mode". Go ahead and do this; don't be scared of it! What it does is allow you to debug your projects without OS X asking for your administrator password every time. If you previously selected "No" the first time that you opened Xcode, don't worry! Just open your terminal and type* `$ DevToolsSecurity -enable`.
