@@ -49,12 +49,15 @@ When your project runs, any `NSLog()`s that are executed print their outputs to 
 
 Within the Navigator area, the first icon (![][nav_project]) displays the Project Navigator which allows you to select which file will display in the Code Editor.
 
-The Run (`▶︎`) and Stop (`◼︎`) buttons will start or stop your application in the iOS Simulator.
+The Run (`▶︎`) and Stop (`◼︎`) buttons will start or stop your application in the iOS Simulator. You can also use the shortcut keys: 
+
+  * Run (`▶︎`): `⌘` `R`
+  * Stop (`◼︎`): `⌘` `.`
 
 The Quick Help: Reference link can be found in the Utilities area and loads itself with information about an Apple-library item when the Code Editor's cursor is placed within its text. Clicking on the "Class Reference" link will open a window showing Apple's documentation regarding the selected library item. 
 
 ![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_basic_buttons.png)
-—*The most essential buttons.*
+—*The most essential buttons: Run, Stop, the Project Navigator pan, and the Quick Help Reference link.*
 
 ## The iOS Simulator
 
