@@ -81,3 +81,5 @@ That's just enough Xcode to start writing some Objective-C!
 
 [nav_project]: http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png
 
+
+<a href='https://learn.co/lessons/reading-ios-intro-to-xcode' data-visibility='hidden'>View this lesson on Learn.co</a>
