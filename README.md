@@ -27,7 +27,7 @@ In addition to the typically-placed application Toolbar, Xcode has four main wor
 3. The Utilities area, and
 4. The Debug area.
 
-**Note:** *If this is your first time using Xcode and you would like a sample project to explore, go ahead and fork, clone, and open the lab in next the lesson titled* "Your-First-NSLog".
+**Note:** *If this is your first time using Xcode and you would like a sample project to explore, go ahead and fork, clone, and open the lab in the next lesson titled* "Your-First-NSLog".
 
 ![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_areas.png)
 —*The areas of Xcode.*
@@ -83,3 +83,5 @@ That's just enough Xcode to start writing some Objective-C!
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/reading-ios-intro-to-xcode' title='Xcode: Just Enough'>Xcode: Just Enough</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/reading-ios-intro-to-xcode'> Xcode: Just Enough</a> on Learn.co and start learning to code for free.</p>
