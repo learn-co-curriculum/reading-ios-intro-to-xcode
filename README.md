@@ -64,9 +64,7 @@ After including this code, if we were to run our app - the simulator should look
 ![bluee](http://i.imgur.com/zjyrEaw.png)
 
 This is the process of creating an app.
- 
 
-It's our belief that programming Objective-C in Xcode is most effectively learned through practice. The lessons that you'll be going through will generally alternate between readings and labs. Labs are actual Xcode projects that we've set up for you so that you can get right to composing code. As the course progresses, you'll learn more and more about Xcode and eventually become capable of completing a project that you started from scratch.
 
 **Note:** *The first time you open Xcode, your machine will ask you if you want to enable "Developer Mode". Go ahead and do this; don't be scared of it! What it does is allow you to debug your projects without OS X asking for your administrator password every time. If you previously selected "No" the first time that you opened Xcode, don't worry! Just open your terminal and type* `$ DevToolsSecurity -enable`.
 
