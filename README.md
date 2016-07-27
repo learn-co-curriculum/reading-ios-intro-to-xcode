@@ -2,17 +2,69 @@
 
 ## Objectives
 
-1. Get acquainted with Xcode just enough to start playing with Objective-C.
+1. Get acquainted with Xcode just enough to start playing with Swift.
 2. Distinguish the four main areas of Xcode and how to find information printed to Console Output Viewer.
 3. Say hello to the iOS Simulator.
 
 ## What is Xcode?
 
-Xcode is the **Integrated Development Environment** (**IDE**) provided by Apple to third-party programmers such as yourself for developing iOS and OS X applications written in Objective-C and Swift. An IDE is a program (or program suite) that incorporates tools for the various aspects of creating software. 
+There are iPhones, Macs, Apple Watches & Apple TV's which represent the hardware offered by Apple. Powering these various devices is software. There are different pieces of software deployed on each device, names you might already be familiar with.
 
-To most beginners, Xcode feels very overwhelming. It's totally natural if you share this experience. Xcode provides a deluge of functionality that's continually being expanded and improved. Learning to use the multitude of tools available through Xcode is an entire set of skills in itself. Acclimating to the Xcode environment is a significant portion of this course which aims to give you, the student, a hands-on working knowledge of using Xcode first-hand to develop mobile applications for iOS.
+* iOS, MacOS, tvOS, watchOS
 
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_is_overwhelming.jpg)
+Being a developer, you will want to create various applications for these various operating systems (everyone has an app idea). 
+
+There needs to be a place where we can create this software. We use a Word document to create essays, stories or... I'm not really sure, I don't use Word documents anymore but you get the point.
+
+Xcode serves as our Word document. It's a place where we write code.
+
+
+The programming languages we can utilize within Xcode are Swift & Objective-C. When this code is written, we can then *run* the application. When doing so, Xcode is able to take the code we wrote and read it. It does more than read the code, it's able to compile it and allow any of the above devices to run it!
+
+This process described above is known as an Integrated Development Environment, or IDE. Xcode then is the IDE provided by Apple that allows us to create apps.
+
+![Xcode](http://i.imgur.com/H5IUNEe.png)
+
+Here is me opening up Xcode and starting a new project. I have the ability to begin an iOS, watchOS, tvOS or MacOS (here it's still OS X) application. It's that simple.
+
+We can hit next and create our project. We will be asked to provide the name of our app.
+
+![example](http://i.imgur.com/MHcgw8r.png)
+
+After hitting next, we can begin to write our code! The language I'm using here will be Swift.
+
+![locate](http://i.imgur.com/WGqFvDu.png)
+
+I've selected the `ViewController.swift` file in the left pane. By doing this, this brings up a document in the center (main) window where we can now write some code!
+
+Here's an example of me writing some code in this `ViewController.swift` file.
+
+![ex](http://i.imgur.com/WvSiOB0.png)
+
+So now that I've written some code in this `ViewController.swift` file, how can we make it *run*. 
+
+In the upper left corner of Xcode, you should see what appears to be a Play Button with a Square (stop) button to the right of it. If you were to click the Play button, your app will run! So lets do that.
+
+![runn](http://i.imgur.com/y8Mp5FA.png)
+
+'Hello everyone' was printed to the console here. But that's not really a fun application (I know).
+
+You should have also noticed, that something else appeared on screen when you ran your app.
+
+![simulator](http://i.imgur.com/7JxaDCZ.png)
+
+This is the Simulator. It simulates what your app will look like. That way, you aren't required to plug and run your app on your iPhone when developing an app. We can do so right from our computer. 
+
+Lets change the background color to blue.
+
+![blue](http://i.imgur.com/hzDDoMG.png)
+
+After including this code, if we were to run our app - the simulator should look like this:
+
+![bluee](http://i.imgur.com/zjyrEaw.png)
+
+This is the process of creating an app.
+ 
 
 It's our belief that programming Objective-C in Xcode is most effectively learned through practice. The lessons that you'll be going through will generally alternate between readings and labs. Labs are actual Xcode projects that we've set up for you so that you can get right to composing code. As the course progresses, you'll learn more and more about Xcode and eventually become capable of completing a project that you started from scratch.
 
