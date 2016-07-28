@@ -1,4 +1,4 @@
-# Xcode: Just Enough
+# Xcode
 
 ## Objectives
 
