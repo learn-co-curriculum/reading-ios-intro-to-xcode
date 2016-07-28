@@ -59,7 +59,7 @@ Lets change the background color to blue.
 
 ![blue](http://i.imgur.com/hzDDoMG.png)
 
-After including this code, if we were to run our app - the simulator should look like this:
+After including this code, if we were to run our app (You can also do this pressing command + r) - the simulator should look like this:
 
 ![bluee](http://i.imgur.com/zjyrEaw.png)
 
@@ -70,68 +70,21 @@ This is the process of creating an app.
 
 ## Xcode Areas
 
-In addition to the typically-placed application Toolbar, Xcode has four main workspace windows. These are, in clockwise rotation from the left:
+![xcodeThing](http://i.imgur.com/tNpTjA3.png)
 
-1. The Navigator area,
-2. The Editor area,
-3. The Utilities area, and
-4. The Debug area.
+The workspace window always includes the editor area. When you select a file in your project, its contents appear in the editor area, where Xcode opens the file in an appropriate editor. For example, in the figure above, the editor area contains AdventureScene.swift, a swift code file that is selected in the navigator area on the left of the workspace window.
 
-**Note:** *If this is your first time using Xcode and you would like a sample project to explore, go ahead and fork, clone, and open the lab in the next lesson titled* "Your-First-NSLog".
+The workspace window displays up to three optional areas used in performing different tasks in the development life cycle. Hiding areas not in use can help you focus on your current task. You can hide or show these optional areas by using the workspace configuration buttons on the far right side of the toolbar:
 
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_areas.png)
-—*The areas of Xcode.*
+![nav](http://i.imgur.com/oxJnlOP.png)  Show and hide the navigator area. Use this area for navigating all facets of your project, including files, symbols, breakpoints, build issues, tests, breakpoints, and build reports. You can also search for any string in your project.
 
-#### Configuration Buttons (Show or Hide Areas)
+![debug](http://i.imgur.com/jQ22SM6.png)  Show and hide the debug area. Use this area for viewing variables, interacting with the debugger console, and controlling the execution of your app.
 
-The three configuration buttons (![][nav_left], ![][nav_middle], ![][nav_right]) on the toolbar in the upper right corner show or hide the Navigator area, the Utilities area, and the Debug area. Additionally, the two configuration buttons inside the Debug area in its lower right corner show or hide its viewers: the Variable Viewer and the Console Output Viewer.
+![rightThing](http://i.imgur.com/BZ0INGj.png)  Show and hide the utilities area. Use this area to inspect or modify attributes of files, graphical user interface elements, sprites, and other elements in your project. Also use it to access a library of ready-made resources. See Accessing Resources and Inspecting Elements.
 
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_config_buttons.png)  
-—*Xcode's five configuration buttons and the areas that they govern.*
-
-#### Finding The Console Output Viewer (The Debug Console)
-
-When your project runs, any `NSLog()`s that are executed print their outputs to the Console Output Viewer, which is often referred to as the "debug console."
-
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_nslog_console.png)  
-—`NSLog()`*s will print to the debug console.*
+---
 
 
-#### Essential Buttons
 
-Within the Navigator area, the first icon (![][nav_project]) displays the Project Navigator which allows you to select which file will display in the Code Editor.
-
-The Run (`▶︎`) and Stop (`◼︎`) buttons will start or stop your application in the iOS Simulator. You can also use the shortcut keys: 
-
-  * Run (`▶︎`): `⌘` `R`
-  * Stop (`◼︎`): `⌘` `.`
-
-The Quick Help: Reference link can be found in the Utilities area and loads itself with information about an Apple-library item when the Code Editor's cursor is placed within its text. Clicking on the "Class Reference" link will open a window showing Apple's documentation regarding the selected library item. 
-
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_basic_buttons.png)
-—*The most essential buttons: Run, Stop, the Project Navigator pan, and the Quick Help Reference link.*
-
-## The iOS Simulator
-
-You'll notice that the iOS Simulator pops up as the front application window whenever you run your project. Don't be alarmed! Since all of the labs that we've set up for you to complete are iOS projects, Xcode must run them through the iOS Simulator: the program that uses your local machine that runs a version of OS X to emulate a mobile device that runs a version of iOS.
-
-You won't actually be interacting with the iOS Simulator directly until much later in this course when we begin working with views; so for now just give it a friendly wave whenever it loads and let it run its merry self in the background.
-
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/xcode_ios_simulator.png)
-—*The iOS Simulator loads every time that you run an application, but just let it do its thing for now.*
-
-![](https://curriculum-content.s3.amazonaws.com/reading-ios-xcode/r2d2.gif)
-
-That's just enough Xcode to start writing some Objective-C!
-
-
-[nav_left]: https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_left.png
-[nav_middle]: https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_middle.png
-[nav_right]: https://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_workspace_nav_right.png
-
-[nav_project]: http://ironboard-curriculum-content.s3.amazonaws.com/iOS/intro-to-xcode/xcode_project_navigator_table.png
-
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/reading-ios-intro-to-xcode' title='Xcode: Just Enough'>Xcode: Just Enough</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/reading-ios-intro-to-xcode'> Xcode: Just Enough</a> on Learn.co and start learning to code for free.</p>
