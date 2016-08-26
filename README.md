@@ -1,10 +1,14 @@
 # Xcode
 
-## Objectives
+## Overview
 
-1. Get acquainted with Xcode just enough to start playing with Swift.
-2. Distinguish the four main areas of Xcode and how to find information printed to Console Output Viewer.
-3. Say hello to the iOS Simulator.
+In this lesson, we'll take a deeper dive into Xcode. 
+
+## Learning Objectives
+
+* Get acquainted with Xcode just enough to start playing with Swift.
+* Distinguish the four main areas of Xcode and how to find information printed to Console Output Viewer.
+* Say hello to the iOS Simulator.
 
 ## What is Xcode?
 
@@ -14,10 +18,9 @@ There are iPhones, Macs, Apple Watches & Apple TV's which represent the hardware
 
 Being a developer, you will want to create various applications for these various operating systems (everyone has an app idea). 
 
-There needs to be a place where we can create this software. We use a Word document to create essays, stories or... I'm not really sure, I don't use Word documents anymore but you get the point.
+There needs to be a place where we can create this software. We use a Word document to create essays, stories, and other text based documents. 
 
 Xcode serves as our Word document. It's a place where we write code.
-
 
 The programming languages we can utilize within Xcode are Swift & Objective-C. When this code is written, we can then *run* the application. When doing so, Xcode is able to take the code we wrote and read it. It does more than read the code, it's able to compile it and allow any of the above devices to run it!
 
@@ -25,29 +28,29 @@ This process described above is known as an Integrated Development Environment, 
 
 ![Xcode](http://i.imgur.com/H5IUNEe.png)
 
-Here is me opening up Xcode and starting a new project. I have the ability to begin an iOS, watchOS, tvOS or MacOS (here it's still OS X) application. It's that simple.
+Let's dive into some step-by-step specifics. Here we're opening up Xcode and starting a new project. We have the ability to begin an iOS, watchOS, tvOS or MacOS (here it's still OS X) application. It's that simple.
 
 We can hit next and create our project. We will be asked to provide the name of our app.
 
 ![example](http://i.imgur.com/MHcgw8r.png)
 
-After hitting next, we can begin to write our code! The language I'm using here will be Swift.
+After hitting next, we can begin to write our code! The language we're using here will be Swift.
 
 ![locate](http://i.imgur.com/WGqFvDu.png)
 
-I've selected the `ViewController.swift` file in the left pane. By doing this, this brings up a document in the center (main) window where we can now write some code!
+We've selected the `ViewController.swift` file in the left pane. By doing this, this brings up a document in the center (main) window where we can now write some code!
 
-Here's an example of me writing some code in this `ViewController.swift` file.
+Here's an example of some code in this `ViewController.swift` file.
 
 ![ex](http://i.imgur.com/WvSiOB0.png)
 
-So now that I've written some code in this `ViewController.swift` file, how can we make it *run*. 
+So now that we've written some code in this `ViewController.swift` file, how do we make it *run*. 
 
 In the upper left corner of Xcode, you should see what appears to be a Play Button with a Square (stop) button to the right of it. If you were to click the Play button, your app will run! So lets do that.
 
 ![runn](http://i.imgur.com/y8Mp5FA.png)
 
-'Hello everyone' was printed to the console here. But that's not really a fun application (I know).
+'Hello everyone' was printed to the console here.
 
 You should have also noticed, that something else appeared on screen when you ran your app.
 
@@ -55,7 +58,7 @@ You should have also noticed, that something else appeared on screen when you ra
 
 This is the Simulator. It simulates what your app will look like. That way, you aren't required to plug and run your app on your iPhone when developing an app. We can do so right from our computer. 
 
-Lets change the background color to blue.
+Let's change the background color to blue.
 
 ![blue](http://i.imgur.com/hzDDoMG.png)
 
