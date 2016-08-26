@@ -6,9 +6,9 @@ In this lesson, we'll take a deeper dive into Xcode.
 
 ## Learning Objectives
 
-* Get acquainted with Xcode just enough to start playing with Swift.
-* Distinguish the four main areas of Xcode and how to find information printed to Console Output Viewer.
-* Say hello to the iOS Simulator.
+* Describe how Xcode allows for the creation of various iOS and Apple applications
+* Distinguish the four main areas of Xcode and how to find information printed to Console Output Viewer
+* Run a simple application in Xcode
 
 ## What is Xcode?
 
