@@ -60,7 +60,7 @@ This is the Simulator. It simulates what your app will look like. That way, you 
 
 Let's change the background color to blue.
 
-![blue](http://i.imgur.com/hzDDoMG.png)
+![blue](https://s3.amazonaws.com/learn-verified/StringSwiftBlue.png)
 
 After including this code, if we were to run our app (You can also do this pressing command + r) - the simulator should look like this:
 
